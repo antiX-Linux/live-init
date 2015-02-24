@@ -1,0 +1,339 @@
+live-init-antix (0.6.10) unstable; urgency=low
+ 
+  * Changes to default debian file
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 23 Feb 2015 00:48:00 +0200
+
+
+live-init-antix (0.6.9) unstable; urgency=low
+ 
+  * antixsources.sh default set to jessie/Stable
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 16 Feb 2015 17:41:00 +0200
+
+
+live-init-antix (0.6.8) unstable; urgency=low
+ 
+  * added translations to .desktop file
+  * improved localisation of antixsources.sh
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 23 Jan 2015 16:52:00 +0200
+
+
+live-init-antix (0.6.7) unstable; urgency=low
+ 
+  * antixsources.desktop name changed to Install.
+  * added ca,de,el,es,fr,it,nl translations.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 01 Jan 2015 15:40:00 +0200
+
+
+live-init-antix (0.6.6) unstable; urgency=low
+ 
+  * antixsources.sh includes Jessie option.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 17 Dec 2014 18:29:00 +0200
+
+
+live-init-antix (0.6.5) unstable; urgency=low
+ 
+  * Removed live scripts out of init.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 15 Nov 2014 21:33:00 +0200
+
+
+live-init-antix (0.6.4) unstable; urgency=low
+ 
+  * Removed local xkb_file section from live-init.
+  * Renamed antiX to live in postrm script.
+  * Added Spanish and Dutch translations.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 21 May 2014 21:50:00 +0200
+
+
+live-init-antix (0.6.3) unstable; urgency=low
+ 
+  * Minor edits to live-init.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 21 May 2014 21:50:00 +0200
+
+
+live-init-antix (0.6.2) unstable; urgency=low
+ 
+  * Renaming files to live* rather than antiX*.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 17 May 2014 14:50:00 +0200
+
+
+live-init-antix (0.6.1) unstable; urgency=low
+ 
+  * Newer scripts in /etc/init.d/debian folder.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 06 May 2014 15:30:00 +0200
+
+
+live-init-antix (0.6.0) unstable; urgency=low
+ 
+  * Removed bug including Xfce in antiX-init.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 05 Apr 2014 23:55:00 +0200
+
+
+live-init-antix (0.5.9) unstable; urgency=low
+ 
+  * further changes in antiX-init, antiX-L10n.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 02 Apr 2014 23:15:00 +0200
+
+
+live-init-antix (0.5.8) unstable; urgency=low
+ 
+  * updated antiX-init
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 15 Feb 2014 23:45:00 +0200
+
+
+live-init-antix (0.5.7) unstable; urgency=low
+ 
+  * antixsources.sh set to Testing for antiX-13.5 release.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 26 Dec 2013 18:30:00 +0200
+
+
+live-init-antix (0.5.6) unstable; urgency=low
+ 
+  * Edited issue file.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 03 Nov 2013 17:40:00 +0200
+
+
+live-init-antix (0.5.5) unstable; urgency=low
+ 
+  * removed update.rc.d
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 26 Oct 2013 12:30:00 +0200
+
+
+live-init-antix (0.5.4) unstable; urgency=low
+ 
+  * Packaged with dpkg-buildpackage.
+  * xz compressed deb.
+  * Removed symlinks to persist-autosave in /etc/rc3.d.
+  * antixsources.sh edited to include antiX new repo.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 19 Oct 2013 12:30:00 +0200
+
+
+live-init-antix (0.5.3) unstable; urgency=low
+ 
+  * Added fr translation.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 17 June 2013 16:30:00 +0200
+
+
+live-init-antix (0.5.2) unstable; urgency=low
+ 
+  * Added more options to disable at live boot.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 15 June 2013 16:30:00 +0200
+
+
+live-init-antix (0.5.1) unstable; urgency=low
+ 
+  * Changed ownership to root;root..
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 06 June 2013 10:05:00 +0200
+
+
+live-init-antix (0.5.0) unstable; urgency=low
+ 
+  * antiX-init to set up iceweasel locale.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 01 May 2013 14:15:00 +0200
+
+
+live-init-antix (0.4.9) unstable; urgency=low
+ 
+  * Renamed doc folder to live-init-antix.
+  * Newer ejectcd script for bettet live unmounting.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 15 Apr 2013 17:45:00 +0200
+
+
+live-init-antix (0.4.8) unstable; urgency=low
+ 
+  * Localised antixsources.sh script.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 09 Apr 2013 17:45:00 +0200
+
+
+live-init-antix (0.4.7) unstable; urgency=low
+ 
+  * Added antixsources.sh script and its .desktop file.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 30 March 2013 00:15:00 +0200
+
+
+live-init-antix (0.4.6) unstable; urgency=low
+ 
+  * Moved rc.local to cli-installer script.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 09 February 2013 16:05:00 +0200
+
+
+live-init-antix (0.4.5) unstable; urgency=low
+ 
+  * Renamed antiX-init.sh to antiX-init.
+  * Renamed antiX-l10n to antiX-L10n.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 26 January 2013 15:35:00 +0200
+
+
+live-init-antix (0.4.4) unstable; urgency=low
+ 
+  * antiX-init localisation changes.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 26 January 2013 00:05:00 +0200
+
+
+live-init-antix (0.4.3) unstable; urgency=low
+ 
+  * Remove Dynamic line for /etc/fstab installed via rc.local.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 10 November 2012 20:05:00 +0200
+
+
+live-init-antix (0.4.2) unstable; urgency=low
+ 
+  * Remove antix-installer via rc.local.
+  * antiX-init.sh fixes.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 05 November 2012 22:15:00 +0200
+
+
+live-init-antix (0.4.1) unstable; urgency=low
+ 
+  * Do not remove antix-installer via rc.local.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 03 November 2012 23:15:00 +0200
+
+
+live-init-antix (0.4.0) unstable; urgency=low
+ 
+  * Incorporated base and full into one deb.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 02 November 2012 19:55:00 +0200
+
+
+live-init-full-antix (0.3.1) unstable; urgency=low
+ 
+  * Move make-fstab to antix-libs.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 30 October 2012 19:55:00 +0200
+
+
+live-init-full-antix (0.3.0) unstable; urgency=low
+ 
+  * New methods.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 20 October 2012 19:35:00 +0200
+
+
+live-init-full-antix (0.2.6.6) unstable; urgency=low
+ 
+  * persistent link in /etc/rc.d fixed.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 06 October 2012 13:30:00 +0200
+
+
+live-init-full-antix (0.2.6.5) unstable; urgency=low
+ 
+  * Fixed ownership bugs.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 26 August 2012 14:30:00 +0200
+
+
+live-init-full-antix (0.2.6.4) unstable; urgency=low
+ 
+  * Added copyright notice.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 16 July 2012 16:30:00 +0200
+
+
+live-init-full-antix (0.2.6.3) unstable; urgency=low
+ 
+  * Fixed sym links.
+  * Added /usr/share/antiX-install/rc.local.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 30 June 2012 13:35:00 +0200
+
+
+live-init-full-antix (0.2.6.2) unstable; urgency=low
+ 
+  * Added cryptsetup and encfs and need to change script run times.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 04 June 2012 18:00:00 +0200
+
+
+live-init-full-antix (0.2.6.1) unstable; urgency=low
+ 
+  * Minor edits to init scripts order.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 21 May 2012 18:30:00 +0200
+
+
+live-init-full-antix (0.2.6) unstable; urgency=low
+ 
+  * Added localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 25 April 2012 18:30:00 +0200
+
+
+live-init-full-antix (0.2.5) unstable; urgency=low
+ 
+  * Further edited various /etc/init.d/rc* sym links.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 08 April 2012 18:30:00 +0200
+
+
+live-init-full-antix (0.2.4) unstable; urgency=low
+ 
+  * Edited various /etc/init.d/rc* sym links.
+
+ -- anticapitalista <antiX@operamail.com>  Tues, 20 March 2012 18:30:00 +0200
+
+
+live-init-full-antix (0.2.3) unstable; urgency=low
+ 
+  * Edited various /etc/init.d scripts.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 11 March 2012 18:30:00 +0200
+
+
+live-init-full-antix (0.2.2) unstable; urgency=low
+ 
+  * Edited /etc/init.d/antiX-init.sh to new apt lists.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 18 January 2012 11:30:00 +0200
+
+
+live-init-full-antix (0.2.1) unstable; urgency=low
+
+  * Moved persistence files to remaster.deb.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 09 January 2012 11:30:00 +0200
+
+
+live-init-full-antix (0.2.0) unstable; urgency=low 
+ 
+  * /etc/init.d/console-set up only runs setupcon -k (keyboard only).
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 31 December 2011 00:30:00 +0200
+
+
+live-init-full-antix (0.1.0) unstable; urgency=low 
+ 
+  * Initial Release.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 20 November 2011 15:30:00 +0200
+

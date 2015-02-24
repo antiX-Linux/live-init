@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Automatically added by dh_installinit
+if [ "$1" = "purge" ] ; then
+	update-rc.d antiX-disable-services remove >/dev/null
+fi
+if [ "$1" = "purge" ] ; then
+	update-rc.d antiX-init remove >/dev/null
+fi
+if [ "$1" = "purge" ] ; then
+	update-rc.d antiX-L10n remove >/dev/null
+fi
+if [ "$1" = "purge" ] ; then
+	update-rc.d antiX-restore-services remove >/dev/null
+fi
+if [ "$1" = "purge" ] ; then
+	update-rc.d ejectcd remove >/dev/null
+fi
+if [ "$1" = "purge" ] ; then
+	update-rc.d persist-autosave remove >/dev/null
+fi
+if [ "$1" = "purge" ] ; then
+	update-rc.d persist-password remove >/dev/null
+fi
+# End automatically added section

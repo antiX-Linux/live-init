@@ -17,6 +17,14 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 umask 022
 
 do_stop () {
+   
+    local live_prog full_live
+    for live_prog in live-umount umount-live; do
+        full_live=/live/bin/$live_prog
+        [ -x $full_live ] || continue
+        exec $full_live --umountfs </dev/console >/dev/console
+    done
+
 	PROTECTED_MOUNTS="$(sed -n ':a;/^[^ ]* \/ /!{H;n;ba};{H;s/.*//;x;s/\n//;p}' /proc/mounts)"
 	WEAK_MTPTS="" # be gentle, don't use force
 	REG_MTPTS=""
@@ -111,7 +119,7 @@ do_stop () {
 }
 
 case "$1" in
-  start|status)
+  start)
 	# No-op
 	;;
   restart|reload|force-reload)

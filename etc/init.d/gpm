@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 ### BEGIN INIT INFO
 # Provides:          gpm
@@ -27,9 +27,9 @@ then
   exit 1
 fi
 
+
 cmdln=
 niceness=0
-ssd_args="--quiet --oknodo --nicelevel $niceness --pidfile $PIDFILE --exec $GPM"
 
 if [ -f $CFG ]; then
   . $CFG
@@ -66,14 +66,25 @@ gpm_start () {
     if :< ${device-/dev/mouse}; then break; fi
     sleep 1
   done
-  start-stop-daemon --start $ssd_args -- $cmdln
+  eval start-stop-daemon --start --quiet --nicelevel $niceness --exec $GPM \
+    -- $cmdln
   log_end_msg $?
   return $?
 }
 
 gpm_stop () {
+  # Bail early if there was a "lean" boot parameter and no gpm running
+  CMDLINE=${CMDLINE:-$(cat /proc/cmdline)}
+  for param in $CMDLINE; do
+    case "$param" in
+        lean|antiX=*[Ll]*|aX=*[Ll]*)               LEAN=true ;;
+        disable_srv=*[lL]*|disable_service=*[lL]*) LEAN=true ;;
+    esac
+  done
+    
+  [ "$LEAN" ] && ! ps -u root -o cmd | grep -q ^$GPM && exit 0
   log_daemon_msg "Stopping mouse interface server" "gpm"
-  start-stop-daemon --stop $ssd_args
+  $GPM -k
   log_end_msg $?
   return $?
 }
