@@ -12,7 +12,7 @@ TEXTDOMAIN=antixsources
 
 export title="antixsources"
 
-info_text=$"This tool sets your default Debian and antiX repository and then runs the installer.
+info_text=$"This tool sets your default Debian repository and then runs the installer.
 
 You can choose between:
 

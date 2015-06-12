@@ -3,4 +3,4 @@ locale/*	      /usr/share/locale
 changelog.gz          /usr/share/doc/live-init-antix
 copyright             /usr/share/doc/live-init-antix
 issue                 /usr/share/antix-install
-etc/*                 /etc
+localize-repo         /sbin 
