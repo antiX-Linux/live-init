@@ -1,3 +1,24 @@
+live-init-antix (0.8.1+nmu1) unstable; urgency=medium
+
+  * Don't show Installer in Applications menu 
+  * Removed issue file
+
+ -- anticapitalista <antix@operamail.com>  Thu, 31 Mar 2016 18:27:26 +0300
+
+live-init-antix (0.8.1) unstable; urgency=low
+ 
+  * Fixed antixsources.sh so testing and sid can be selected before install.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 27 Mar 2016 21:45:00 +0200
+
+
+live-init-antix (0.8.0) unstable; urgency=low
+ 
+  * Removed localize-repo
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 10 Jan 2016 21:52:00 +0200
+
+
 live-init-antix (0.7.1) unstable; urgency=low
  
   * Added more translations

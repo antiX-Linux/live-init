@@ -17,8 +17,8 @@ info_text=$"This tool sets your default Debian repository and then runs the inst
 You can choose between:
 
 Jessie/Stable
-Testing
-Sid/Unstable
+Testing (Experts)
+Sid/Unstable (Experts)
 
 This release of antiX defaults to Jessie/Stable and antiX/Stable.
 
@@ -39,22 +39,22 @@ function edit_sources
     fi
     # Testing
     if [ "$testing" = true ]; then
-        sed -i -r '/testing/ s/^#+//' /etc/apt/sources.list.d/debian.list 
-        sed -i -r '/http:.*multimedia\.org.* testing/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list    
-        sed -i -r '/jessie/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list        
-        sed -i -r '/deb-src/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list
-        sed -i -r '/testing/ s/^#+//' /etc/apt/sources.list.d/antix.list 
-        sed -i -r '/stable/ s/^/#/' /etc/apt/sources.list.d/antix.list
+        sed -i -r "/testing/ s/^#+//" /etc/apt/sources.list.d/debian.list 
+        sed -i -r "/http:.*multimedia\.org.* testing/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list    
+        sed -i -r "/jessie/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list        
+        sed -i -r "/deb-src/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list
+        sed -i -r "/testing/ s/^#+//" /etc/apt/sources.list.d/antix.list 
+        sed -i -r "/jessie/ s/^/#/" /etc/apt/sources.list.d/antix.list
     fi
     # Sid
     if [ "$sid" = true ]; then
-        sed -i -r '/unstable/ s/^#+//' /etc/apt/sources.list.d/debian.list
-        sed -i -r '/http:.*multimedia\.org.* unstable/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list    
-        sed -i -r '/jessie/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list 
-        sed -i -r '/testing/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list  
-        sed -i -r '/deb-src/ s/^([^#])/#\1/' /etc/apt/sources.list.d/debian.list
-        sed -i -r '/testing/ s/^#+//' /etc/apt/sources.list.d/antix.list 
-        sed -i -r '/stable/ s/^/#/' /etc/apt/sources.list.d/antix.list
+        sed -i -r "/unstable/ s/^#+//" /etc/apt/sources.list.d/debian.list
+        sed -i -r "/http:.*multimedia\.org.* unstable/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list    
+        sed -i -r "/jessie/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list 
+        sed -i -r "/testing/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list  
+        sed -i -r "/deb-src/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list
+        sed -i -r "/sid/ s/^#+//" /etc/apt/sources.list.d/antix.list 
+        sed -i -r "/jessie/ s/^/#/" /etc/apt/sources.list.d/antix.list
     fi
 }
 

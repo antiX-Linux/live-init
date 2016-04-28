@@ -1,6 +1,3 @@
-antixsources.desktop  /usr/share/applications/antix
-locale/*	      /usr/share/locale
-changelog.gz          /usr/share/doc/live-init-antix
-copyright             /usr/share/doc/live-init-antix
-issue                 /usr/share/antix-install
-localize-repo         /sbin 
+antixsources.desktop  usr/share/applications/antix
+locale/*	      usr/share/locale
+antixsources.sh       usr/local/bin
