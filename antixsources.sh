@@ -2,9 +2,9 @@
 # File Name: antixsources.sh
 # Purpose: script to set initial Debian repository (and antiX)
 # Author: anticapitalista for antiX
-# Latest Change: 23 January 2015
-# Added options for up-coming Jessie repositories. 17 December 2014.
-# Set default to Jessie.
+# Latest Change: 03 March 2017
+# Added options for up-coming Stretch repositories. 03 March 2017.
+# Set default to Stretch.
 ##################################################################################
 
 TEXTDOMAINDIR=/usr/share/locale 
@@ -16,14 +16,14 @@ info_text=$"This tool sets your default Debian repository and then runs the inst
 
 You can choose between:
 
-Jessie/Stable
+Stretch/Stable
 Testing (Experts)
 Sid/Unstable (Experts)
 
-This release of antiX defaults to Jessie/Stable and antiX/Stable.
+This release of antiX defaults to Stretch/Stable and antiX/Stretch.
 
 If you do not know what to do, choose Cancel and the 
-Jessie/Stable repositories will be used and the installer will begin.
+Stretch/Stable repositories will be used and the installer will begin.
 
 Press OK to continue."
 
@@ -33,28 +33,28 @@ WIDTH=300
 # edit Debian sources.list
 function edit_sources
 {
-    # Jessie
-    if [ "$jessie" = true ]; then
+    # Stretch
+    if [ "$stretch" = true ]; then
         echo "do nothing"
     fi
     # Testing
     if [ "$testing" = true ]; then
         sed -i -r "/testing/ s/^#+//" /etc/apt/sources.list.d/debian.list 
         sed -i -r "/http:.*multimedia\.org.* testing/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list    
-        sed -i -r "/jessie/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list        
+        sed -i -r "/stretch/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list        
         sed -i -r "/deb-src/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list
         sed -i -r "/testing/ s/^#+//" /etc/apt/sources.list.d/antix.list 
-        sed -i -r "/jessie/ s/^/#/" /etc/apt/sources.list.d/antix.list
+        sed -i -r "/stretch/ s/^/#/" /etc/apt/sources.list.d/antix.list
     fi
     # Sid
     if [ "$sid" = true ]; then
         sed -i -r "/unstable/ s/^#+//" /etc/apt/sources.list.d/debian.list
         sed -i -r "/http:.*multimedia\.org.* unstable/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list    
-        sed -i -r "/jessie/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list 
+        sed -i -r "/stretch/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list 
         sed -i -r "/testing/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list  
         sed -i -r "/deb-src/ s/^([^#])/#\1/" /etc/apt/sources.list.d/debian.list
         sed -i -r "/sid/ s/^#+//" /etc/apt/sources.list.d/antix.list 
-        sed -i -r "/jessie/ s/^/#/" /etc/apt/sources.list.d/antix.list
+        sed -i -r "/stretch/ s/^/#/" /etc/apt/sources.list.d/antix.list
     fi
 }
 
@@ -71,8 +71,9 @@ function minstall
         if [ $rsp != 0 ]; then
         exit 0
         else
-        sudo minstall
+        sudo fskbsetting
         fi
+        sudo minstall
 }
 
 #=======================================================================
@@ -94,7 +95,7 @@ ans=$(yad --center --title "$title" \
              --list --separator=":" \
              --text $"Choose ONE repository for Debian and antiX" \
              --radiolist  --column $"Choose" --column $"Repository"\
-              TRUE "Jessie" \
+              TRUE "Stretch" \
              FALSE "Testing" \
              FALSE "Sid")
 
@@ -108,8 +109,8 @@ for x in $arr
 do
     #echo "> [$x]"
     case $x in
-    Jessie)
-        jessie='true'
+    Stretch)
+        stretch='true'
         selected='yes'
         ;;
     Testing)

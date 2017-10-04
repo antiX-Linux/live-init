@@ -1,3 +1,27 @@
+live-init-antix (0.9.3) unstable; urgency=medium
+
+  * Added keyboard set up to script before opening minstall
+
+ -- anticapitalista <antix@operamail.com>  Fri, 30 Jun 2017 21:10:41 +0300
+
+live-init-antix (0.9.2) unstable; urgency=low
+
+  * Added Czech
+
+ -- anticapitalista <antix@operamail.com>  Sun, 02 Apr 2017 19:24:17 +0300
+
+live-init-antix (0.9.1) unstable; urgency=medium
+
+  * Updated and corrected translations
+
+ -- anticapitalista <antix@operamail.com>  Sat, 11 Mar 2017 17:18:51 +0200
+
+live-init-antix (0.9.0) unstable; urgency=medium
+
+  * Stretch build
+
+ -- anticapitalista <antix@operamail.com>  Fri, 03 Mar 2017 21:40:39 +0200
+
 live-init-antix (0.8.6) unstable; urgency=medium
 
   * New Portuguese translation
