@@ -43,4 +43,4 @@ Icon=msystem
 Terminal=false
 Type=Application
 Categories=Settings;
-NoDisplay=True
+NoDisplay=False
